@@ -448,7 +448,7 @@ typedef NS_ENUM( NSInteger, AVCamLivePhotoMode ) {
 
 #pragma mark Device Configuration
 
-- (IBAction)changeCamera:(id)sender
+- (void)changeCamera
 {
 	self.cameraButton.enabled = NO;
 	self.recordButton.enabled = NO;
@@ -679,7 +679,7 @@ typedef NS_ENUM( NSInteger, AVCamLivePhotoMode ) {
 
 #pragma mark Recording Movies
 
-- (IBAction)toggleMovieRecording:(id)sender
+- (void)toggleMovieRecording
 {
 	/*
 		Disable the Camera button until recording finishes, and disable

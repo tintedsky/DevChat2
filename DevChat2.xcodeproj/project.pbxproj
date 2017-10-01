@@ -20,6 +20,7 @@
 		FC2B52281F7DEDFD0069E737 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC2B52261F7DEDFD0069E737 /* Main.storyboard */; };
 		FC2B522D1F7F02E00069E737 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FC2B522C1F7F02E00069E737 /* GoogleService-Info.plist */; };
 		FCD7DD511F8082EB009EED36 /* LogInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD7DD501F8082EB009EED36 /* LogInVC.swift */; };
+		FCD7DD541F81763F009EED36 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD7DD531F81763F009EED36 /* AuthService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +46,7 @@
 		FC2B522B1F7EC5A50069E737 /* AVCameraVCDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVCameraVCDelegate.h; sourceTree = "<group>"; };
 		FC2B522C1F7F02E00069E737 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		FCD7DD501F8082EB009EED36 /* LogInVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogInVC.swift; sourceTree = "<group>"; };
+		FCD7DD531F81763F009EED36 /* AuthService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 		FC2B52061F7D3E750069E737 /* DevChat2 */ = {
 			isa = PBXGroup;
 			children = (
+				FCD7DD521F81761B009EED36 /* Services */,
 				FC2B52291F7EC54E0069E737 /* Protocols */,
 				FC2B52241F7D3F770069E737 /* View */,
 				FC2B52231F7D3F610069E737 /* Controller */,
@@ -141,6 +144,14 @@
 				FC2B522B1F7EC5A50069E737 /* AVCameraVCDelegate.h */,
 			);
 			name = Protocols;
+			sourceTree = "<group>";
+		};
+		FCD7DD521F81761B009EED36 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				FCD7DD531F81763F009EED36 /* AuthService.swift */,
+			);
+			name = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -282,6 +293,7 @@
 				FC2B52221F7D3EF60069E737 /* AVCamPhotoCaptureDelegate.m in Sources */,
 				FC2B520A1F7D3E750069E737 /* CameraVC.swift in Sources */,
 				FCD7DD511F8082EB009EED36 /* LogInVC.swift in Sources */,
+				FCD7DD541F81763F009EED36 /* AuthService.swift in Sources */,
 				FC2B52081F7D3E750069E737 /* AppDelegate.swift in Sources */,
 				FC2B52211F7D3EF60069E737 /* AVCamCameraViewController.m in Sources */,
 				FC1844DF1F80748900041E0E /* RoundedButton.swift in Sources */,

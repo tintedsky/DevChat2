@@ -8,4 +8,5 @@ target 'DevChat2' do
   # Pods for DevChat2
   pod 'Firebase/Core'
   pod 'Firebase/Storage'
+  pod 'Firebase/Auth'
 end

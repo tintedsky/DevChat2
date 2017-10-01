@@ -19,6 +19,7 @@
 		FC2B52221F7D3EF60069E737 /* AVCamPhotoCaptureDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FC2B521F1F7D3EF60069E737 /* AVCamPhotoCaptureDelegate.m */; };
 		FC2B52281F7DEDFD0069E737 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC2B52261F7DEDFD0069E737 /* Main.storyboard */; };
 		FC2B522D1F7F02E00069E737 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FC2B522C1F7F02E00069E737 /* GoogleService-Info.plist */; };
+		FCD7DD511F8082EB009EED36 /* LogInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD7DD501F8082EB009EED36 /* LogInVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +44,7 @@
 		FC2B52271F7DEDFD0069E737 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FC2B522B1F7EC5A50069E737 /* AVCameraVCDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVCameraVCDelegate.h; sourceTree = "<group>"; };
 		FC2B522C1F7F02E00069E737 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		FCD7DD501F8082EB009EED36 /* LogInVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogInVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +119,7 @@
 				FC2B521C1F7D3EF60069E737 /* AVCamCameraViewController.h */,
 				FC2B521D1F7D3EF60069E737 /* AVCamCameraViewController.m */,
 				FC2B52091F7D3E750069E737 /* CameraVC.swift */,
+				FCD7DD501F8082EB009EED36 /* LogInVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -278,6 +281,7 @@
 			files = (
 				FC2B52221F7D3EF60069E737 /* AVCamPhotoCaptureDelegate.m in Sources */,
 				FC2B520A1F7D3E750069E737 /* CameraVC.swift in Sources */,
+				FCD7DD511F8082EB009EED36 /* LogInVC.swift in Sources */,
 				FC2B52081F7D3E750069E737 /* AppDelegate.swift in Sources */,
 				FC2B52211F7D3EF60069E737 /* AVCamCameraViewController.m in Sources */,
 				FC1844DF1F80748900041E0E /* RoundedButton.swift in Sources */,

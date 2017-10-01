@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		9490841DC42B8F2B55C092E2 /* Pods_DevChat2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0E1C5B5072A1AC68280625F /* Pods_DevChat2.framework */; };
+		FC1844DD1F802F8B00041E0E /* RoundTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC1844DC1F802F8B00041E0E /* RoundTextField.swift */; };
+		FC1844DF1F80748900041E0E /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC1844DE1F80748900041E0E /* RoundedButton.swift */; };
 		FC2B52081F7D3E750069E737 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2B52071F7D3E750069E737 /* AppDelegate.swift */; };
 		FC2B520A1F7D3E750069E737 /* CameraVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2B52091F7D3E750069E737 /* CameraVC.swift */; };
 		FC2B520F1F7D3E750069E737 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC2B520E1F7D3E750069E737 /* Assets.xcassets */; };
@@ -23,6 +25,8 @@
 		20FAD062A15BE10197370DA7 /* Pods-DevChat2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DevChat2.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DevChat2/Pods-DevChat2.debug.xcconfig"; sourceTree = "<group>"; };
 		B0E1C5B5072A1AC68280625F /* Pods_DevChat2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DevChat2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB661297F1DE40849922A0D2 /* Pods-DevChat2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DevChat2.release.xcconfig"; path = "Pods/Target Support Files/Pods-DevChat2/Pods-DevChat2.release.xcconfig"; sourceTree = "<group>"; };
+		FC1844DC1F802F8B00041E0E /* RoundTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundTextField.swift; sourceTree = "<group>"; };
+		FC1844DE1F80748900041E0E /* RoundedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 		FC2B52041F7D3E750069E737 /* DevChat2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DevChat2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC2B52071F7D3E750069E737 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FC2B52091F7D3E750069E737 /* CameraVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraVC.swift; sourceTree = "<group>"; };
@@ -122,6 +126,8 @@
 			children = (
 				FC2B521A1F7D3EF60069E737 /* AVCamPreviewView.h */,
 				FC2B521B1F7D3EF60069E737 /* AVCamPreviewView.m */,
+				FC1844DC1F802F8B00041E0E /* RoundTextField.swift */,
+				FC1844DE1F80748900041E0E /* RoundedButton.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -274,6 +280,8 @@
 				FC2B520A1F7D3E750069E737 /* CameraVC.swift in Sources */,
 				FC2B52081F7D3E750069E737 /* AppDelegate.swift in Sources */,
 				FC2B52211F7D3EF60069E737 /* AVCamCameraViewController.m in Sources */,
+				FC1844DF1F80748900041E0E /* RoundedButton.swift in Sources */,
+				FC1844DD1F802F8B00041E0E /* RoundTextField.swift in Sources */,
 				FC2B52201F7D3EF60069E737 /* AVCamPreviewView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

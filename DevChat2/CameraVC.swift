@@ -25,11 +25,13 @@ class CameraVC: AVCamCameraViewController, AVCameraVCDelegate {
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        guard Auth.auth().currentUser != nil else {
-            //load login vc
-            performSegue(withIdentifier: "LogInVC", sender: nil)
-            return
-        }
+        performSegue(withIdentifier: "LogInVC", sender: nil)
+        
+        //        guard Auth.auth().currentUser != nil else {
+        //            //load login vc
+        //            performSegue(withIdentifier: "LogInVC", sender: nil)
+        //            return
+        //        }
     }
     
     @IBAction func recordBtnPressed(_ sender: Any) {

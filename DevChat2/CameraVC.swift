@@ -39,7 +39,7 @@ class CameraVC: AVCamCameraViewController, AVCameraVCDelegate {
     @IBAction func changeCameraBtnPressed(_ sender: Any) {
         changeCamera()
     }
-    
+        
     func shouldEnableCameraUI(_ enable: Bool) {
         cameraBtn.isEnabled = enable
         print("Should enable camera UI: \(enable)")
@@ -56,6 +56,36 @@ class CameraVC: AVCamCameraViewController, AVCameraVCDelegate {
     
     func canStartRecording() {
         print("Can start recording")
+    }
+    
+    func videoRecordingCompleted(_ videoURL: URL!) {
+        performSegue(withIdentifier: "UsersVC", sender:["videoURL":videoURL])
+    }
+    
+    func videoRecordingFailed() {
+        
+    }
+    
+    func snapshotTaken(_ snapshotData: Data!) {
+        performSegue(withIdentifier: "UsersVC", sender: ["snapshotData":snapshotData])
+    }
+    
+    func snapshotFailed() {
+        
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "UsersVC" {
+            if let usersVC = segue.destination as? UsersVC {
+                if let videoDict = sender as? Dictionary<String, URL>{
+                    let url = videoDict["videoURL"]
+                    usersVC.videoURL = url
+                }else if let snapDict = sender as? Dictionary<String, Data> {
+                    let snapData = snapDict["snapshotData"]
+                    usersVC.snapData = snapData
+                }
+            }
+        }
     }
 }
 

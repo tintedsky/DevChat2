@@ -7,7 +7,7 @@
 */
 
 #import "AVCamPhotoCaptureDelegate.h"
-
+#import "AVCameraVCDelegate.h"
 
 @import Photos;
 
@@ -92,16 +92,20 @@
 {
 	if ( error != nil ) {
 		NSLog( @"Error capturing photo: %@", error );
+        [self.delegate snapshotFailed];
 		[self didFinish];
 		return;
 	}
 	
 	if ( self.photoData == nil ) {
 		NSLog( @"No photo data resource" );
+        [self.delegate snapshotFailed];
 		[self didFinish];
 		return;
 	}
 	
+    [self.delegate snapshotTaken:self.photoData];
+    
 	[PHPhotoLibrary requestAuthorization:^( PHAuthorizationStatus status ) {
 		if ( status == PHAuthorizationStatusAuthorized ) {
 			[[PHPhotoLibrary sharedPhotoLibrary] performChanges:^{

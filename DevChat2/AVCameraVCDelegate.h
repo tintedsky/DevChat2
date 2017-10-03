@@ -13,5 +13,11 @@
 -(void)shouldEnableRecordUI:(BOOL)enable;
 -(void)recordingHasStarted;
 -(void)canStartRecording;
+
+-(void)videoRecordingCompleted:(NSURL*)videoURL;
+-(void)videoRecordingFailed;
+
+-(void)snapshotTaken:(NSData*)snapshotData;
+-(void)snapshotFailed;
 @end
 #endif /* AVCameraVCDelegate_h */
